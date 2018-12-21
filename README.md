@@ -1,21 +1,50 @@
-# Project2
+<h3>Gossip Simulator</h3>
 
-**TODO: Add description**
+<b>Distributed Operating Systems - COP5615</b>
 
-## Installation
+<b>Group Members</b>
+```
+Ratna Prakirana (UFID 3663-9969)
+Eesh Kant Joshi (UFID 1010-1069)
+```
+<b>Path to the running file</b>
+```
+project2/lib/project2.ex
+```
+Kindly re-run the program with the same value if it encounters an issue (infinite run) , since it may not get to a node which is working due to removal of its neighboring nodes
+So the max numbers of nodes is also  not  very large
+<b>Execution command</b>
+```
+Command 1: mix escript.build
+Command 2: escript project2 total_nodes topology protocol
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `project2` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:project2, "~> 0.1.0"}
-  ]
-end
+eg: escript project2 5000 rand2D gossip
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/project2](https://hexdocs.pm/project2).
+<b>Working</b>
+```
+Convergence of Gossip Algorithm for all topologies - line , imp_line , rand2D , 3D ,full ,torus
+Convergence of Push sum Algorithm for all topologies - line , imp_line , rand2D , 3D ,full ,torus
+```
 
+<b>Largest Network</b>
+```
+Gossip Algorithm
+
+Line Topology - 50 Nodes (actors)
+Random 2D grid Topology - 20,000 Nodes
+Imperfect line Topology - 4200 Nodes
+Full network Topology - 2400 Nodes
+Torus Topology - 1050 Nodes
+3D grid Topology - 700 Nodes
+
+
+Push sum Algorithm
+
+Line Topology - 50 Nodes (actors)
+Random 2D grid - 22,000 Nodes
+Imperfect line Topology - 4400 Nodes
+Full network Topology - 2500 Nodes
+Torus Topology - 1100 Nodes
+3D grid Topology - 700 Nodes
+```
